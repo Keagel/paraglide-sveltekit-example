@@ -1,0 +1,22 @@
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "hello_world": "Hello World",
+    "sverdle": "Sverdle",
+    "the_answer_was": "The answer was {answer}",
+    "you_won": "you won :)",
+    "game_over": "game over :(",
+    "back": "back",
+    "enter": "enter",
+    "sverdle_state_empty": "empty",
+    "sverdle_state_absent": "(absent)",
+    "sverdle_state_present": "(present)",
+    "sverdle_state_correct": "(correct)",
+    "row_number": "Row {number}",
+    "home": "Home",
+    "about": "About",
+    "play_again": "play again?",
+    "about_this_app": "About this app",
+    "footer_cta": "Visit <a href=\"https://www.inlang.com/c/svelte\">inlang.com</a> to learn more about Paraglide",
+    "welcome_to_paraglide_and_sveltekit_demo": "Welcome to the Paraglide + SvelteKit Demo!",
+    "try_editing_the_message_files": "Try editing the message files in <code>messages/en.json</code>!"
+}
