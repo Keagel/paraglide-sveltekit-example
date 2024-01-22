@@ -2,7 +2,6 @@
   import { page } from "$app/stores";
   import logo from "$lib/images/svelte-logo.svg";
   import github from "$lib/images/github.svg";
-  import { route } from "$lib/i18n";
   import { languageTag } from "$paraglide/runtime";
   import * as m from "$paraglide/messages";
 </script>
@@ -24,25 +23,25 @@
           ? "page"
           : undefined}
       >
-        <a href={route("/", languageTag())}>{m.home()}</a>
+        <a href="/">{m.home()}</a>
       </li>
       <li
         aria-current={$page.url.pathname.endsWith("/about")
           ? "page"
           : undefined}
       >
-        <a href={route("/about", languageTag())}>{m.about()}</a>
+        <a href="/about">{m.about()}</a>
       </li>
       <li
         aria-current={$page.url.pathname.endsWith("/sverdle")
           ? "page"
           : undefined}
       >
-        <a href={route("/sverdle", languageTag())}>{m.sverdle()}</a>
+        <a href="/sverdle">{m.sverdle()}</a>
       </li>
       <li class="language-picker">
         <a
-          href={route($page.url.pathname, "en")}
+          href={i18n.route($page.url.pathname, "en")}
           hreflang="en"
           class="lang"
           aria-current={languageTag() === "en" ? "location" : undefined}

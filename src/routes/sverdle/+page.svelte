@@ -1,10 +1,7 @@
 <script>
   import { confetti } from "@neoconfetti/svelte";
   import { enhance } from "$app/forms";
-
   import { reduced_motion } from "./reduced-motion";
-  import { route } from "$lib/i18n";
-  import { languageTag } from "$paraglide/runtime";
   import * as m from "$paraglide/messages";
 
   /** @type {import('./$types').PageData} */
@@ -105,7 +102,7 @@
 
 <form
   method="POST"
-  action={route("/sverdle/?/enter", languageTag())}
+  action="?/enter"
   use:enhance={() => {
     // prevent default callback from resetting the form
     return ({ update }) => {
@@ -160,7 +157,7 @@
       <button
         data-key="enter"
         class="restart selected"
-        formaction={route("/sverdle/?/restart", languageTag())}
+        formaction="?/restart"
       >
         {won ? m.you_won() : m.game_over()}
         {m.play_again()}
@@ -176,7 +173,7 @@
         <button
           on:click|preventDefault={update}
           data-key="backspace"
-          formaction={route("/sverdle/?/update", languageTag())}
+          formaction="?/update"
           name="key"
           value="backspace"
         >
@@ -191,7 +188,7 @@
                 data-key={letter}
                 class={classnames[letter]}
                 disabled={submittable}
-                formaction={route("/sverdle/?/update", languageTag())}
+                formaction="?/update"
                 name="key"
                 value={letter}
                 aria-label="{letter} {description[letter] || ''}"

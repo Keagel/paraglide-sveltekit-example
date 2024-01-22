@@ -1,23 +1,24 @@
 <script>
-	import Paraglide from '$lib/Paraglide.svelte';
-	import Header from './Header.svelte';
+	import { ParaglideJS } from '@inlang/paraglide-js-adapter-sveltekit';
+	import { i18n } from '$lib/i18n';
+	import Header from './[[lang=lang]]/Header.svelte';
 	import * as m from "$paraglide/messages"
 	import './styles.css';
 </script>
 
-<Paraglide>
-<div class="app">
-	<Header />
+<ParaglideJS {i18n}>
+	<div class="app">
+		<Header />
 
-	<main>
-		<slot />
-	</main>
+		<main>
+			<slot />
+		</main>
 
-	<footer>
-		<p>{@html m.footer_cta()}</p>
-	</footer>
-</div>
-</Paraglide>
+		<footer>
+			<p>{@html m.footer_cta()}</p>
+		</footer>
+	</div>
+</ParaglideJS>
 
 <style>
 	.app {
