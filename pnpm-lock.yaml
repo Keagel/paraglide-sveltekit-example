@@ -12,8 +12,8 @@ devDependencies:
     specifier: 1.2.1
     version: 1.2.1(@sinclair/typebox@0.31.28)
   '@inlang/paraglide-js-adapter-sveltekit':
-    specifier: ^0.2.1
-    version: 0.2.1(@sinclair/typebox@0.31.28)(@sveltejs/kit@2.3.3)
+    specifier: ^0.2.2
+    version: 0.2.2(@sinclair/typebox@0.31.28)(@sveltejs/kit@2.3.3)
   '@neoconfetti/svelte':
     specifier: ^1.0.0
     version: 1.0.0
@@ -314,8 +314,8 @@ packages:
       '@sinclair/typebox': 0.31.28
     dev: true
 
-  /@inlang/paraglide-js-adapter-sveltekit@0.2.1(@sinclair/typebox@0.31.28)(@sveltejs/kit@2.3.3):
-    resolution: {integrity: sha512-/3TFvZvtJKWUVfst7R3JWiyzQBFGzK6CHoqw/jwvHtY3bf8xjGjyd/eXsoEhy2kvTr5gRYfhy5oSf4ViWC51cg==}
+  /@inlang/paraglide-js-adapter-sveltekit@0.2.2(@sinclair/typebox@0.31.28)(@sveltejs/kit@2.3.3):
+    resolution: {integrity: sha512-8ekBEPYmymcuo90kn/8B1T0kf8AV6N5KR3LRt3gE4+60DTcTtqh7/Q+KpiZZfNuRCAQwTnQnHWqQ81gGAAfwMA==}
     peerDependencies:
       '@sveltejs/kit': ^2.3.0
     dependencies:
