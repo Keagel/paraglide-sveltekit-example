@@ -4,10 +4,10 @@
 	import * as m from "$paraglide/messages.js";
   	import { languageTag } from "$paraglide/runtime";
 
-	const lang = {
-		en,
-		de,
-	};
+	/**
+	 * @type {Record<import("$paraglide/runtime.js").AvailableLanguageTag, any>}
+	 */
+	const lang = { en, de };
 </script>
 
 <svelte:head>

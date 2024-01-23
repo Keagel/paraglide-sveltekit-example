@@ -2,8 +2,9 @@
   import { page } from "$app/stores";
   import logo from "$lib/images/svelte-logo.svg";
   import github from "$lib/images/github.svg";
-  import { languageTag } from "$paraglide/runtime";
+  import { availableLanguageTags, languageTag } from "$paraglide/runtime";
   import * as m from "$paraglide/messages";
+  import { i18n } from "$lib/i18n";
 </script>
 
 <header>
@@ -19,41 +20,36 @@
     </svg>
     <ul>
       <li
-        aria-current={["/", "/de"].includes($page.url.pathname)
+        aria-current={i18n.route($page.url.pathname) === "/"
           ? "page"
           : undefined}
       >
         <a href="/">{m.home()}</a>
       </li>
-      <li
-        aria-current={$page.url.pathname.endsWith("/about")
+      <li aria-current={i18n.route($page.url.pathname) === "/about"
           ? "page"
           : undefined}
       >
         <a href="/about">{m.about()}</a>
       </li>
-      <li
-        aria-current={$page.url.pathname.endsWith("/sverdle")
+      <li aria-current={i18n.route($page.url.pathname) === "/sverdle"
           ? "page"
           : undefined}
       >
-        <a href="/sverdle">{m.sverdle()}</a>
+        <a href="/sverdle">
+          {m.sverdle()}
+        </a>
       </li>
       <li class="language-picker">
-        <a
-          href={i18n.route($page.url.pathname, "en")}
-          hreflang="en"
-          class="lang"
-          aria-current={languageTag() === "en" ? "location" : undefined}
-          data-sveltekit-keepfocus>EN</a
-        >
-        <a
-          href={route($page.url.pathname, "de")}  
-          hreflang="de"
-          class="lang"
-          aria-current={languageTag() === "de" ? "location" : undefined}
-          data-sveltekit-keepfocus>DE</a
-        >
+        {#each availableLanguageTags as lang}
+          <a
+            href={i18n.route($page.url.pathname)}
+            hreflang={lang}
+            class="lang"
+            aria-current={languageTag() === lang ? "true" : undefined}
+            data-sveltekit-keepfocus>{lang.toUpperCase()}</a
+          >
+        {/each}
       </li>
     </ul>
     <svg viewBox="0 0 2 3" aria-hidden="true">
@@ -163,7 +159,7 @@
     color: var(--color-theme-1);
   }
 
-  .lang[aria-current="location"] {
+  .lang[aria-current="true"] {
     color: var(--color-theme-1);
   }
 </style>

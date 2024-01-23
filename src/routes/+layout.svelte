@@ -1,7 +1,7 @@
 <script>
 	import { ParaglideJS } from '@inlang/paraglide-js-adapter-sveltekit';
 	import { i18n } from '$lib/i18n';
-	import Header from './[[lang=lang]]/Header.svelte';
+	import Header from './Header.svelte';
 	import * as m from "$paraglide/messages"
 	import './styles.css';
 </script>
@@ -44,10 +44,6 @@
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
 	}
 
 	@media (min-width: 480px) {
