@@ -12,7 +12,7 @@
 	"devDependencies": {
 		"@fontsource/fira-mono": "^4.5.10",
 		"@inlang/paraglide-js": "1.2.1",
-		"@inlang/paraglide-js-adapter-sveltekit": "^0.2.2",
+		"@inlang/paraglide-js-adapter-sveltekit": "^0.3.2",
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.3.0",
