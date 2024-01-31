@@ -2,20 +2,19 @@
 	<h1>Über diese App</h1>
 
 	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
+		Dies ist eine <a href="https://kit.svelte.dev">SvelteKit</a> app. Erstellen sie eine neue SvelteKit app mit
+		dem folgenden Befehl:
 	</p>
 
 	<pre>npm create svelte@latest</pre>
 
 	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
+		Die Seite, die Sie sich ansehen, ist rein statisches HTML, ohne dass eine Client-seitige Interaktivität erforderlich ist.
+		Deshalb müssen wir kein JavaScript laden. Versuchen Sie, die Quelle der Seite anzuzeigen oder die Devtools-Netzwerktafel zu öffnen und neu zu laden.
 	</p>
 
 	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
+		Die <a href="/sverdle">Sverdle</a> Seite veranschaulicht das Laden von Daten und das Verarbeiten von Formularen in SvelteKit. Versuchen Sie es
+		mit deaktiviertem JavaScript!
 	</p>
 </div>
