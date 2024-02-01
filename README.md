@@ -1,3 +1,3 @@
-# Paraglide + SvelteKit examples
+# SvelteKit i18n Example
 
-This repository showcases how the [Paraglide SvelteKit adapter](https://inlang.com/m/dxnzrydw/library-inlang-paraglideJsAdapterSvelteKit) can be used to build a multi-lingual SvelteKit application.
+This Repository Showcases how to use the [Paraglide SvelteKit adapter](https://inlang.com/m/dxnzrydw/library-inlang-paraglideJsAdapterSvelteKit) to build a multi-lingual SvelteKit application.
