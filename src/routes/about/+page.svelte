@@ -1,13 +1,6 @@
 <script>
-	import en from "./en.svelte";
-	import de from "./de.svelte";
 	import * as m from "$paraglide/messages.js";
-  	import { languageTag } from "$paraglide/runtime";
-
-	/**
-	 * @type {Record<import("$paraglide/runtime.js").AvailableLanguageTag, any>}
-	 */
-	const lang = { en, de };
+	export let data;
 </script>
 
 <svelte:head>
@@ -15,4 +8,4 @@
   <meta name="description" content={m.about_this_app()} />
 </svelte:head>
 
-<svelte:component this={lang[languageTag()]} />
+<svelte:component this={data.content} />

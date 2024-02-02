@@ -8,4 +8,8 @@ export const i18n = createI18n(runtime, {
       de: "/ueber",
     },
   },
+  textDirection: {
+    en: "ltr",
+    de: "ltr"
+  }
 });
