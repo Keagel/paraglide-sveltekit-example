@@ -9,8 +9,8 @@ devDependencies:
     specifier: ^4.5.10
     version: 4.5.10
   '@inlang/paraglide-js':
-    specifier: 1.2.1
-    version: 1.2.1(@sinclair/typebox@0.31.28)
+    specifier: ^1.2.3
+    version: 1.2.3(@sinclair/typebox@0.31.28)
   '@inlang/paraglide-js-adapter-sveltekit':
     specifier: ^0.3.2
     version: 0.3.2(@sinclair/typebox@0.31.28)(@sveltejs/kit@2.3.3)
@@ -354,8 +354,8 @@ packages:
       - debug
     dev: true
 
-  /@inlang/paraglide-js@1.2.1(@sinclair/typebox@0.31.28):
-    resolution: {integrity: sha512-p8uTb6S5wLqT0eANaDeqsdKYr3qmGmEwcSfXf/epuVJ571QiKDsR0MymUh4B4dfFioszriPwXKKkJ3Kt23A3tg==}
+  /@inlang/paraglide-js@1.2.2(@sinclair/typebox@0.31.28):
+    resolution: {integrity: sha512-cq0US0KH9oqKL9UwbwhkCEu6G/BYc9YkmI/KxR1BX3zgOhpIBRio/35C1nIyycreXPkohSJxK0kygwh/7Td9nw==}
     hasBin: true
     dependencies:
       '@inlang/detect-json-formatting': 1.0.0
@@ -372,8 +372,8 @@ packages:
       - debug
     dev: true
 
-  /@inlang/paraglide-js@1.2.2(@sinclair/typebox@0.31.28):
-    resolution: {integrity: sha512-cq0US0KH9oqKL9UwbwhkCEu6G/BYc9YkmI/KxR1BX3zgOhpIBRio/35C1nIyycreXPkohSJxK0kygwh/7Td9nw==}
+  /@inlang/paraglide-js@1.2.3(@sinclair/typebox@0.31.28):
+    resolution: {integrity: sha512-Hc0KM9aCZHJTp6OY52KhwrLlN+pXoGTPJ5du1UBrWXuWd95B+u5x3Yu3DxSgaGa/3zcTR860KAMfGL+/SM6ptg==}
     hasBin: true
     dependencies:
       '@inlang/detect-json-formatting': 1.0.0
