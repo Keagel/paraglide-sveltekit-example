@@ -1,1 +1,22 @@
-{"$schema":"https://inlang.com/schema/inlang-message-format","sverdle":"Sverdle","the_answer_was":"Die Antwort war {answer}","you_won":"du hast gewonnen :)","game_over":"Spiel vorbei :(","back":"zurück","enter":"enter","sverdle_state_empty":"leer","sverdle_state_absent":"(fehlt)","sverdle_state_present":"(vorhanden)","sverdle_state_correct":"(korrekt)","row_number":"Reihe {number}","home":"Startseite","about":"Info","play_again":"Erneut spielen?","about_this_app":"Über diese App","footer_cta":"Besuchen sie <a href=\"https://www.inlang.com/c/svelte\">inlang.com</a> um mehr über Paraglide zu lernen","welcome_to_paraglide_and_sveltekit_demo":"Wilkommen zur Paraglide + SvelteKit Demo!","try_editing_the_message_files":"Bearbeiten sie die Übersetzungen in <code>messages/de.json</code>!"}
+{
+    "$schema": "https://inlang.com/schema/inlang-message-format",
+    "sverdle": "Sverdle",
+    "the_answer_was": "Die Antwort war {answer}",
+    "you_won": "du hast gewonnen :)",
+    "game_over": "Spiel vorbei :(",
+    "back": "zurück",
+    "enter": "enter",
+    "sverdle_state_empty": "leer",
+    "sverdle_state_absent": "(fehlt)",
+    "sverdle_state_present": "(vorhanden)",
+    "sverdle_state_correct": "(korrekt)",
+    "row_number": "Reihe {number}",
+    "home": "Startseite",
+    "about": "Info",
+    "play_again": "Erneut spielen?",
+    "about_this_app": "Über diese App",
+    "footer_cta": "Besuchen sie <a href=\"https://www.inlang.com/c/svelte\">inlang.com</a> um mehr über Paraglide zu lernen",
+    "welcome_to_paraglide_and_sveltekit_demo": "Wilkommen zur Paraglide + SvelteKit Demo!",
+    "try_editing_the_message_files": "Bearbeiten sie die Übersetzungen in <code>messages/de.json</code>!",
+    "about_path": "/ueber-uns"
+}
