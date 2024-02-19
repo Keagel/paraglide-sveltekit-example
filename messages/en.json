@@ -19,5 +19,6 @@
     "footer_cta": "Visit <a href=\"https://www.inlang.com/c/svelte\">inlang.com</a> to learn more about Paraglide",
     "welcome_to_paraglide_and_sveltekit_demo": "Welcome to the Paraglide + SvelteKit Demo!",
     "try_editing_the_message_files": "Try editing the message files in <code>messages/en.json</code>!",
-    "about_path": "/about"
+    "about_path": "/about",
+    "localized_string": "Localized string"
 }
