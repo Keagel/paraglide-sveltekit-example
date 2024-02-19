@@ -4,12 +4,16 @@
   import { reduced_motion } from "./reduced-motion";
   import { testSchema } from '$lib/schemas';
   import * as m from "$paraglide/messages";
+  import { languageTag } from "$paraglide/runtime";
+
 
   /** @type {import('./$types').PageData} */
   export let data;
 
   /** @type {import('./$types').ActionData} */
   export let form;
+
+  console.log(`+page.svelte: ${languageTag()}`);
 
   /** Whether or not the user has won */
   $: won = data.answers.at(-1) === "xxxxx";
