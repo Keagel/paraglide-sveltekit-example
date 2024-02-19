@@ -1,5 +1,6 @@
 import { fail } from '@sveltejs/kit';
 import { Game } from './game';
+import { testSchema } from '$lib/schemas';
 
 /** @satisfies {import('./$types').PageServerLoad} */
 export const load = ({ cookies }) => {
