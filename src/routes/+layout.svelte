@@ -4,11 +4,13 @@
 	import Header from './Header.svelte';
 	import * as m from "$paraglide/messages"
 	import './styles.css';
+
+	export let data;
 </script>
 
 <ParaglideJS {i18n}>
 	<div class="app">
-		<Header />
+		<Header menuItems={data.menuItems} />
 
 		<main>
 			<slot />

@@ -3,8 +3,12 @@
   import logo from "$lib/images/svelte-logo.svg";
   import github from "$lib/images/github.svg";
   import { availableLanguageTags, languageTag } from "$paraglide/runtime";
-  import * as m from "$paraglide/messages";
   import { i18n } from "$lib/i18n";
+
+  /**
+     * @type {any}
+     */
+   export let menuItems;
 </script>
 
 <header>
@@ -19,30 +23,19 @@
       <path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
     </svg>
     <ul>
+      {#each menuItems as item}
       <li
-        aria-current={i18n.route($page.url.pathname) === "/"
+        aria-current={i18n.route($page.url.pathname) === item.href
           ? "page"
           : undefined}
       >
-        <a href="/">{m.home()}</a>
+        <a href={item.href}>{item.text}</a>
       </li>
-      <li aria-current={i18n.route($page.url.pathname) === "/about"
-          ? "page"
-          : undefined}
-      >
-        <a href="/about">{m.about()}</a>
-      </li>
-      <li aria-current={i18n.route($page.url.pathname) === "/sverdle"
-          ? "page"
-          : undefined}
-      >
-        <a href="/sverdle">
-          {m.sverdle()}
-        </a>
-      </li>
+      {/each}
       <li class="language-picker">
         {#each availableLanguageTags as lang}
           <a
+            data-sveltekit-reload
             href={i18n.route($page.url.pathname)}
             hreflang={lang}
             class="lang"
